@@ -448,6 +448,7 @@ vim.keymap.set('n', '<F11>', require 'dap'.step_into)
 vim.keymap.set('n', '<F12>', require 'dap'.step_out)
 vim.keymap.set('n', '<leader>b', require 'dap'.toggle_breakpoint)
 vim.keymap.set('n', '<leader>dt', require 'dap-go'.debug_test)
+vim.keymap.set('n', '<leader>dl', require 'dap'.run_last)
 
 local dap, dapui =require("dap"),require("dapui")
 dap.listeners.after.event_initialized["dapui_config"]=function()
